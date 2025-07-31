@@ -6,8 +6,8 @@ A simple and responsive grocery billing web app where users can add items, calcu
 
 ## 📸 Demo
 
-![Screenshot](./screenshot.png)  
-[Click to Visit Live Site](https://jyotirmay497.github.io/gym-website/  )
+
+[Click to Visit Live(https://jyotirmay497.github.io/gym-website/  )
 
 ---
 
