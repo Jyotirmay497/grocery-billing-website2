@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Royal Fitness</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshMart - Grocery Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <div class="logo">Royal <span>Fitness</span></div>
-      <nav>
-        <ul id="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Review</a></li>
-        </ul>
-        <button class="join-btn">Join Us</button>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-      </nav>
-    </div>
+    <h1>FreshMart</h1>
   </header>
 
-  <section class="hero" data-aos="fade-up">
-    <div class="hero-content" data-aos="fade-right">
-      <h1>Build Your <br><span>Dream Physique</span></h1>
-      <h2>Strength Training</h2>
-      <p>"Built by hard work, powered by commitment."
+  <main>
+    <section id="add-product">
+      <h2>Add Product</h2>
+      <input type="text" id="product-name" placeholder="Product Name">
+      <input type="number" id="product-price" placeholder="Price (₹)">
+      <button onclick="addProduct()">Add</button>
+    </section>
 
-</p>
-      <a href="#" class="btn">Join Us</a>
-    </div>
-    <div class="hero-image" data-aos="fade-left">
-      <img src="gym-pic.png" alt="Muscle Guy"/>
-    </div>
-  </section>
+    <section id="product-list">
+      <h2>Product List</h2>
+      <ul id="products"></ul>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <section id="billing">
+      <h2>Billing Summary</h2>
+      <p>Total: ₹<span id="total">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FreshMart</p>
+  </footer>
+    
   <script src="script.js"></script>
 </body>
 </html>
